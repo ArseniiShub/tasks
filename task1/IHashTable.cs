@@ -6,7 +6,7 @@ namespace task1
 {
     interface IHashTable
     {
-        CustomHashList<int> HashLists { get; set; }
+        LinkedList<int> HashLists { get; set; }
         void Insert(int newValue);
     }
 }
