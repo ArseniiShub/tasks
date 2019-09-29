@@ -4,7 +4,7 @@ using System.Text;
 
 namespace task1
 {
-    internal class ListNode<T> : IListNode<T>
+    class ListNode<T> : IListNode<T>
     {
         public T Value { get; set; }
         public ListNode<T> Next { get; set; }

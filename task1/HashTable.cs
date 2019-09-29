@@ -7,7 +7,7 @@ namespace task1
     class HashTable : IHashTable
     {
         int hashArg;
-        public CustomHashList<int> HashLists { get; set; }
+        public LinkedList<int> HashLists { get; set; }
         /// <summary>
         /// Creates a new instance of HashTable with newValue % <paramref name="hashArg"/> hash function
         /// </summary>
@@ -15,7 +15,7 @@ namespace task1
         public HashTable(int hashArg)
         {
             this.hashArg = hashArg;
-            HashLists = new CustomHashList<int>();
+            HashLists = new LinkedList<int>();
             CreateHashLists();
         }
 
